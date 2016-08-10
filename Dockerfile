@@ -1,7 +1,6 @@
 FROM convox/ruby
 
-RUN apk update 
-RUN apk add nginx
+RUN apt-get -y install nginx
 
 ENV PORT 5000
 
